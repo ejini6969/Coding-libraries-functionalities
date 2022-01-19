@@ -8,6 +8,7 @@ function range(m, n){
 }
 
 function rangeNoOrder(m, n){
+  // m, n can be any arbitrary integer
   m = Math.min(m, n)
   n = Math.max(m, n)
   return Array.from({length: n - m + 1}, (_, i) => i + m) // start from m to n (after redefining variable)
