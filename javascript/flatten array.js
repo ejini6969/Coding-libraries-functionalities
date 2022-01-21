@@ -11,7 +11,7 @@ function flatten3(arr){
   return arr.reduce((a, b) => a.concat(b), [])
 }
 
-// multi-dimensional arrays (nested arrats)
+// multi-dimensional arrays (nested arrays)
 function nestedflatten1(arr){
   return arr.reduce((a, b) => a.concat(Array.isArray(b) ? nestedflatten1(...b) : b), [])
 }
