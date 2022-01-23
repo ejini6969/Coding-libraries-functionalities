@@ -27,3 +27,15 @@ function fmax(arr){
 function fmean(arr){
   return _.mean(arr) // arr.reduce((a, b) => a + b, 0) / arr.length
 }
+// [1, 2, 3, 4] -> 10
+function fsum(arr){
+  return _.sum(arr) // arr.reduce((a, b) => a + b, 0)
+}
+// [1, 2, 3, 4] -> 24
+function fmul(arr){
+  return _.reduce(arr, (a, b) => a * b, 1) // arr.reduce((a, b) => a * b, 1)
+}
+// [1, 3, 5, 7], 3 -> true
+function check(a, x){
+  return _.includes(a, x); // a.includes(x)
+};
