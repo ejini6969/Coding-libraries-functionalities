@@ -47,5 +47,23 @@ function smash(words) {
 function fil(arr){
   return _.filter(arr, x => x > 0) // arr.filter(x => x > 0)
 }
+// [0, 3, 4, 5] -> 50
+function mapsum(arr){
+  return _(arr).map( n => n**2 ).sum() // arr.map(n => n**2).reduce((a, b) => a + b, 0)
+}
 // [1, 2, 3], [4, 5, 6] -> 21 ( arr1.concat(arr2).reduce((a, b) => a + b, 0) )
 // https://www.codewars.com/kumite/61eccdf8eab3f529a8c6ae46?sel=61eccdf8eab3f529a8c6ae46 
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~String~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// "abc", 3 -> "abcabcabc"
+function rep(s, n){
+  return _.repeat(s, n) // s.repeat(n)
+}
+// "a b c" -> "abc"
+function spaceremove(s){
+  return _.replace(s, /\s/g, "") // s.replace(/\s/g, "")
+}
+// "abc" -> "ABC"
+function up(s){
+  return _.toUpper(s) // s.toUpperCase()
+}
