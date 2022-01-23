@@ -39,3 +39,11 @@ function fmul(arr){
 function check(a, x){
   return _.includes(a, x); // a.includes(x)
 };
+// ["hello", "amazing", "world"] -> "hello amazing world"
+function smash(words) {   
+  return _.join(words, ' '); // words.join` `
+};
+// [23, -1, 3, -4] -> [23, 3]
+function fil(arr){
+  return _.filter(arr, x => x > 0) // arr.filter(x => x > 0)
+}
