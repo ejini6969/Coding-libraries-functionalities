@@ -3,8 +3,12 @@
 const _ = require("lodash")
 
 // [1, 2, 3] -> 3
-function f(arr){
+function len(arr){
   return _.size(arr) // arr.length
+}
+// ["e", "j", "i", "n", "i"] -> {'e': 1, 'j': 1, 'i': 2, 'n': 1}
+function counter(arr){
+  return _.countBy(arr) // arr.reduce((a, b) => (a[b] = a[b] + 1 || 1, a), {})
 }
 // [[1, 2, 3], ["a", "b", "c"], [1, 2, 3]] -> [1, 2, 3, "a", "b", "c", 1, 2, 3]
 function f(array){
@@ -63,6 +67,10 @@ function mapsum(arr){
 function f(s){
   return _.size(s) // s.length
 }
+// "ejini" -> {'e': 1, 'j': 1, 'i': 2, 'n': 1}
+function counter(s){
+  return _.countBy(s) // [...s].reduce((a, b) => (a[b] = a[b] + 1 || 1, a), {})
+}
 // "abc", 3 -> "abcabcabc"
 function rep(s, n){
   return _.repeat(s, n) // s.repeat(n)
@@ -90,4 +98,8 @@ function solution(str, starting){
 // "abc", "bc" -> true
 function solution(str, ending){
   return _.endsWith(str, ending); // str.endsWith(ending)
+}
+// "JACK" -> "Jack"
+function caps(s){
+  return _.capitalize(s) // s[0].toUpperCase() + s.slice(1).toLowerCase()
 }
