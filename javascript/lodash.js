@@ -2,6 +2,10 @@
 
 const _ = require("lodash")
 
+// [1, 2, 3] -> 3
+function f(arr){
+  return _.size(arr) // arr.length
+}
 // [[1, 2, 3], ["a", "b", "c"], [1, 2, 3]] -> [1, 2, 3, "a", "b", "c", 1, 2, 3]
 function f(array){
   return _.flatten(array) // [].concat(...array)
@@ -55,6 +59,10 @@ function mapsum(arr){
 // https://www.codewars.com/kumite/61eccdf8eab3f529a8c6ae46?sel=61eccdf8eab3f529a8c6ae46 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~String~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// "ejini" -> 5
+function f(s){
+  return _.size(s) // s.length
+}
 // "abc", 3 -> "abcabcabc"
 function rep(s, n){
   return _.repeat(s, n) // s.repeat(n)
