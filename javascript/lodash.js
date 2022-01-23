@@ -18,6 +18,14 @@ function f(array){
 function reverseList(arr) {
   return _.reverse(arr); // arr.reverse()                              
 }
+// [1, 11, 4, 7] -> [1, 4, 7, 11]
+function fsort(arr){
+  return _(arr).sortBy().value() // arr.sort((a, b) => a - b)
+}
+// [[1, 'a'], [1, 'd'], [3, 'c'], [4, 'k']] -> [[4, 'k'], [3, 'c'], [1, 'a'], [1, 'd']]
+function forder(arr){
+  return _(arr).orderBy([x => x[0], x => x[1]], ['desc', 'asc']) // arr.sort((a, b) => b[0] - a[0] || a[1].localeCompare(b[1]))
+}
 // [1, 2, 3, 4], 2 -> 1
 // [1, 3, 5, 7], 8 -> Not found
 function find(a, e) {
