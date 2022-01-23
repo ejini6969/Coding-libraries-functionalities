@@ -67,3 +67,11 @@ function spaceremove(s){
 function up(s){
   return _.toUpper(s) // s.toUpperCase()
 }
+// "ABC" -> "abc"
+function up(s){
+  return _.toLower(s) // s.toLowerCase()
+}
+// "Robin Singh" -> ["Robin", "Singh"]
+function stringToArray(string){
+  return _.split(string, ' '); // string.split` `
+}
