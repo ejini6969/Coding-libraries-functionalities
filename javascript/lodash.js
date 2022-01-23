@@ -69,7 +69,8 @@ function mapsum(arr){
 }
 // [1, 2, 3], [4, 5, 6] -> 21 ( arr1.concat(arr2).reduce((a, b) => a + b, 0) )
 // https://www.codewars.com/kumite/61eccdf8eab3f529a8c6ae46?sel=61eccdf8eab3f529a8c6ae46 
-
+// "abcdef" -> "ace bdf" (partitioning
+// https://www.codewars.com/kumite/61ed084ceab3f50017c6ba8b?sel=61ed0979eab3f50031c6bb41
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~String~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // "ejini" -> 5
 function f(s){
