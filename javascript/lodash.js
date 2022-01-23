@@ -75,3 +75,11 @@ function up(s){
 function stringToArray(string){
   return _.split(string, ' '); // string.split` `
 }
+// "abc", "bc" -> false
+function solution(str, starting){
+  return _.startsWith(str, starting); // str.startsWith(ending)
+}
+// "abc", "bc" -> true
+function solution(str, ending){
+  return _.endsWith(str, ending); // str.endsWith(ending)
+}
