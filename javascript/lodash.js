@@ -15,3 +15,15 @@ function reverseList(arr) {
 function find(a, e) {
   return _.indexOf(a, e)==-1?"Not found":_.indexOf(a,e); // a.indexOf(e)
 }
+// [1, 2, 3, 4] -> 1
+function fmin(arr){
+  return _.min(arr) // Math.min(...arr)
+}
+// [1, 2, 3, 4] -> 4
+function fmax(arr){
+  return _.max(arr) // Math.max(...arr)
+}
+// [1, 2, 3, 4] -> 2.5
+function fmean(arr){
+  return _.mean(arr) // arr.reduce((a, b) => a + b, 0) / arr.length
+}
