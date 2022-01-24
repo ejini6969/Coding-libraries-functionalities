@@ -71,6 +71,10 @@ function fil(arr){
 function mapsum(arr){
   return _(arr).map( n => n**2 ).sum() // arr.map(n => n**2).reduce((a, b) => a + b, 0)
 }
+// [1, 1, 2, 2] -> [1, 2]
+function unique(arr){
+  return _.uniq(arr) // [...new Set(arr)]
+}
 // [1, 2, 3], [4, 5, 6] -> 21 ( arr1.concat(arr2).reduce((a, b) => a + b, 0) )
 // https://www.codewars.com/kumite/61eccdf8eab3f529a8c6ae46?sel=61eccdf8eab3f529a8c6ae46 
 // "abcdef" -> "ace bdf" (partitioning
