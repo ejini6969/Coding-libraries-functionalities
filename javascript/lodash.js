@@ -7,8 +7,12 @@ function len(arr){
   return _.size(arr) // arr.length
 }
 // [0, 2, null, "abc", undefined", -9] -> [2, "abc", -9]
-function alltrue(arr){
+function gettrue(arr){
   _.compact(arr) // arr.filter(Boolean) 
+}
+// [1, "a", true, -9] -> true
+function alltrue(arr){
+  return _.every(arr) // arr.every(x => x)
 }
 // ["e", "j", "i", "n", "i"] -> {'e': 1, 'j': 1, 'i': 2, 'n': 1}
 function counter(arr){
