@@ -6,6 +6,10 @@ const _ = require("lodash")
 function len(arr){
   return _.size(arr) // arr.length
 }
+// [0, 2, null, "abc", undefined", -9] -> [2, "abc", -9]
+function alltrue(arr){
+  _.compact(arr) // arr.filter(Boolean) 
+}
 // ["e", "j", "i", "n", "i"] -> {'e': 1, 'j': 1, 'i': 2, 'n': 1}
 function counter(arr){
   return _.countBy(arr) // arr.reduce((a, b) => (a[b] = a[b] + 1 || 1, a), {})
