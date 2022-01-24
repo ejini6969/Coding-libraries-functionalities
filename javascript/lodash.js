@@ -128,3 +128,7 @@ function caps(s){
 function int(s){
   return _.toInteger(s) // +s / Number(s) / parseInt(s)
 }
+// "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." --> 19
+function countword(s){
+  return _(s).words(/\S+/g).size() // (str.match(/\S+/g) || []).length
+}
