@@ -112,3 +112,7 @@ function solution(str, ending){
 function caps(s){
   return _.capitalize(s) // s[0].toUpperCase() + s.slice(1).toLowerCase()
 }
+// "32" -> 32
+function int(s){
+  return _.toInteger(s) // +s / Number(s) / parseInt(s)
+}
