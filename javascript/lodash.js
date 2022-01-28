@@ -132,3 +132,9 @@ function int(s){
 function countword(s){
   return _(s).words(/\S+/g).size() // (str.match(/\S+/g) || []).length
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hash / Collections ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// { a: '1', b: '2', c: '3' } -> { 1: 'a', 2: 'b', 3: 'c' }
+function invert(hash){
+  return _.invert(hash) // Object.keys(hash).reduce((a,b) => (a[hash[b]] = b, a), {})
+}
